@@ -1,0 +1,125 @@
+/* Core Colors */
+:root {
+    --fire-engine-red: rgb(201, 16, 39); /* Vermelho principal */
+    --burnt-sienna: rgb(226, 123, 88);  /* Vermelho mais suave */
+    --beige: #F5F5DD;                  /* Fundo neutro */
+    --beige-light: #EFE6DB;            /* Fundo mais claro */
+    --font-asap: 'Asap', sans-serif;   /* Fonte principal */
+}
+
+/* Global Styles */
+body {
+    background-color: var(--beige);
+    font-family: var(--font-asap);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer */
+header,
+footer {
+    background-color: var(--fire-engine-red);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+/* Section Styling */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Altura total menos header e footer */
+}
+
+/* Login Form */
+.login {
+    position: relative; /* Isso define o contexto de posicionamento */
+    overflow: hidden;
+    background-color: var(--beige-light);
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 400px;
+    transform: translate(0, 0);
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+    text-align: left;
+}
+
+/* Animated Background */
+.login::before,
+.login::after {
+    content: '';
+    position: absolute;
+    width: 1200px; /* Reduzido */
+    height: 1200px; /* Reduzido */
+    border-radius: 40% 45% 35% 40%; /* Simplificado */
+    z-index: -1; /* Para não sobrepor o conteúdo */
+}
+
+.login::before {
+    left: 60%; /* Ajustado para centralizar melhor */
+    bottom: -60%; /* Ajustado para não invadir outras áreas */
+    background-color: rgba(226, 123, 88, 0.5);
+    animation: wawes 6s infinite linear;
+}
+
+.login::after {
+    left: 55%;
+    bottom: -65%;
+    background-color: rgba(201, 16, 39, 0.5);
+    animation: wawes 7s infinite linear;
+}
+
+
+/* Input Fields */
+.login label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--fire-engine-red);
+}
+
+.login input {
+    font-family: var(--font-asap);
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit Button */
+.login button {
+    font-family: var(--font-asap);
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: var(--fire-engine-red);
+    transition: background-color 300ms ease;
+}
+
+.login button:hover {
+    background-color: var(--burnt-sienna);
+}
+
+/* Animation */
+@keyframes wawes {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

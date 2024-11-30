@@ -1,0 +1,118 @@
+/* Colors */
+:root {
+    --fire-engine-red: rgb(201, 16, 39);
+    --burnt-sienna: rgb(226, 123, 88);
+    --beige: #F5F5DD;
+    --font-asap: 'Asap', sans-serif;
+  }
+  
+ /* Global Styles */
+body {
+  background-color: var(--beige);
+  font-family: var(--font-asap);
+  margin: 0;
+  padding: 0;
+}
+
+  /* Header and Footer */
+header,
+footer {
+    background-color: var(--fire-engine-red);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+  .login {
+    overflow: hidden;
+    background-color: #EFE6DB;
+    padding: 40px 30px 30px 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+  }
+  
+  .login::before,
+  .login::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+  }
+  
+  .login::before {
+    left: 40%;
+    bottom: -130%;
+    background-color: rgba(226, 123, 88, 0.5);
+    animation: wawes 6s infinite linear;
+  }
+  
+  .login::after {
+    left: 35%;
+    bottom: -125%;
+    background-color: rgba(201, 16, 39, 0.5);
+    animation: wawes 7s infinite linear;
+  }
+  
+  .login > input {
+    font-family: var(--font-asap);
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+  }
+  
+  .login > button {
+    font-family: var(--font-asap);
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: var(--fire-engine-red);
+    transition: background-color 300ms;
+  }
+  
+  .login > button:hover {
+    background-color: var(--burnt-sienna); /* Darken equivalente */
+  }
+  
+  @keyframes wawes {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+  }
+  
