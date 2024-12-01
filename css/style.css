@@ -1,12 +1,14 @@
 /* Estilos gerais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #F5F5DD;
     color: #050505;
     line-height: 1.6;
@@ -37,7 +39,70 @@ a:hover {
     color:#E27B58
 }
 
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C91027;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    color:#fff;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-default:hover {
+    background-color:#E27B58;
+
+}
+
 /* Cabeçalho */
+
+header{
+    width: 100%;
+    padding: 28px 8%;    
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    width: 10%;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: 3px solid #ffe100;
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/*
 header {
     display: flex;
     justify-content: space-between;
@@ -81,6 +146,7 @@ nav ul li .btn {
 nav ul li .btn:hover {
     background-color: #C91027;
 }
+    */
 
 /* Seção Principal */
 #home {
@@ -199,6 +265,18 @@ footer .animal-drawing img {
 
 /* Responsividade */
 @media (max-width: 768px) {
+
+    #nav_list,
+    #navbar .btn-default {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav_logo {
+        width: 30%
+    }
+
+   
     nav ul {
         flex-direction: column;
         align-items: center;
