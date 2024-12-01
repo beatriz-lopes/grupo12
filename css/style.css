@@ -63,7 +63,8 @@ a:hover {
 
 header{
     width: 100%;
-    padding: 28px 8%;    
+    padding: 28px 8%;
+    background-color: #fefefe;    
 }
 
 #navbar {
@@ -91,7 +92,7 @@ header{
 
 .nav-item.active a {
     color: #1d1d1d;
-    border-bottom: 3px solid #ffe100;
+    border-bottom: 3px solid #C91027;
 }
 
 #mobile_btn {
@@ -221,24 +222,47 @@ section {
 footer {
     background-color: #C91027;
     color: white;
-    text-align: left;
-    padding: 10px;
+    text-align: center; 
+    padding: 20px 40px;
+    position: relative;
 }
 
 footer .footer-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; /* p ficar vertical */
+    flex-wrap: wrap; 
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
+footer .address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+footer .address p {
+    margin: 5px 0;
+}
+
+footer .address i {
+    margin-right: 10px;
+}
+
+/* Ícones das Redes Sociais (Centro) */
 footer .social-media {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    margin: 20px 0;
 }
 
 footer .social-media a {
-    font-size: 30px;
+    font-size: 60px;
     color: white;
     transition: color 0.3s ease, transform 0.3s ease-in-out;
 }
@@ -248,20 +272,59 @@ footer .social-media a:hover {
     transform: scale(1.2);
 }
 
-footer .social-media a i {
-    font-size: 50px;
+/* GitHub Links (Direita) */
+footer .github-links {
+    text-align: right;
+    margin: 0 20px;
 }
 
-footer .address {
-    flex: 1;
-    text-align: left;
-    margin: 10px;
+footer .github-links a {
+    display: block;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-footer .animal-drawing img {
-    max-width: 100px;
-    height: auto;
+footer .github-links a:hover {
+    color: #E27B58;
 }
+
+/* Contêiner da imagem personalizada */
+.custom-image {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    width: 320px;
+    height: 320px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    z-index: 10;
+}
+footer .custom-image img {
+    width: 10;
+    height: 10;
+    border-radius: 0%; 
+    object-fit: cover; 
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); 
+}
+
+/* iconezinho do google maps */
+.map-icon {
+    position: absolute;
+    top: 18px;
+    left: 665px;
+    color: #ffffff; 
+    font-size: 24px; 
+    text-decoration: none; 
+    margin-left: 10px; 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.map-icon:hover {
+    color: #E27B58; 
+    transform: scale(1.2); 
+}
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -296,13 +359,13 @@ footer .animal-drawing img {
         text-align: center;
     }
 
-    footer .animal-drawing {
-        margin-top: 20px;
+    footer .address, footer .github-links {
+        align-items: center;
+        margin: 10px 0;
     }
 
     footer .social-media {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        margin: 20px 0;
     }
 }
+
