@@ -16,3 +16,9 @@ Fundada em 1º de março de 2008 em Jacarezinho, Paraná, a ONG Bicharedo é uma
 <br>O objetivo deste projeto é desenvolver um site para a ONG, visando aumentar sua visibilidade e facilitar a divulgação de suas atividades. O portal será uma plataforma informativa, onde os visitantes poderão conhecer mais sobre os valores, missão e objetivos da organização, além de acompanhar suas ações e impactar positivamente a comunidade.
 
 ### Estrutura do projeto
+- CSS
+  - style.css
+- README.md
+- cadastro.html
+- index.html
+- login.html
