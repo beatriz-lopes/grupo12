@@ -603,3 +603,149 @@ footer .custom-image img {
         display: none;
     }
 }
+/*--------------ADMIN-----------/*
+/* Estilos gerais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #F5F5DD;
+}
+
+section {
+    padding: 28px 8%;
+}
+
+h1, h2 {
+    color: #C91027;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+h3 {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#link-Rodape {
+    color: #ffffff;
+}
+
+#link-Rodape:hover {
+    color: #E27B58;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C91027;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-bottom: 15px; /* Espaço entre os botões */
+}
+
+.btn-default:hover {
+    background-color: #E27B58;
+    color: #fff;
+}
+
+/* Formulário de Cadastro */
+.cadastro {
+    overflow: hidden;
+    background-color: #efe4db;
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto; /* Centraliza o formulário */
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+
+.cadastro label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #C91027;
+}
+
+.cadastro input {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Espaço entre os campos */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os botões */
+}
+/* Estilos para os botões de Cadastrar e Limpar Campos */
+form button[type="submit"] {
+    background-color: #C91027;  /* Cor de fundo do botão "Cadastrar" */
+    color: white;               /* Cor do texto */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #E27B58;  /* Cor de fundo do botão "Cadastrar" ao passar o mouse */
+}
+
+form button[type="reset"] {
+    background-color: #B0B0B0;  /* Cor de fundo do botão "Limpar Campos" */
+    color: white;                /* Cor do texto */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="reset"]:hover {
+    background-color: #8C8C8C;  /* Cor de fundo do botão "Limpar Campos" ao passar o mouse */
+}
+
+
+footer {
+    background-color: #C91027;
+    color: white;
+    text-align: center;
+    padding: 20px 4%;
+}
+
+footer p {
+    margin-top: 20px;
+}
