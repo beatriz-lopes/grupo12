@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+      <!-- Cabeçalho -->
+      <header>
+        <nav id="navbar">
+            <img src="img/logo.jpg" alt="logo Ong Bicharedo" id="nav_logo">
+    
+            <ul id="nav_list">
+                <li class="nav-item active"><a href="index.html">Início</a></li>
+            </ul>
+    
+            <button class="btn-default">
+                <a href="login.html">Login</a>
+            </button>
+    
+        </nav>
+    
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="index.html">Início</a></li>
+            </ul>
+    
+            <button class="btn-default">
+                <a href="login.html">Login</a>
+            </button>
+    
+        </div>
+    </header>
+    
+    <main>
+    <section>
+            <form class="cadastro" action="/processar-cadastro" method="POST">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+                <label for="data_nascimento">Data de Nascimento:</label><br>
+                <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required><br><br>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+    </section>
+
+</main>
+
+<!-- Rodapé -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <!-- Endereço e Contato (Esquerda) -->
+            <div class="address">
+                <p><strong>Rua Cel. Figueiredo, 509</strong></p>
+                <h3>Contato</h3>
+                <p>
+                    <i class="fa-solid fa-envelope"></i> 
+                    <a id="link-Rodape" href="mailto:contato@bicharedo.org">contato@bicharedo.org</a>
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i> 
+                    Telefone: (11) 1234-5678
+                </p>
+                <!-- Ícone de Localização -->
+                <a href="https://www.google.com/maps/place/R.+Cel.+Figueiredo,+509,+Jacarezinho+-+PR,+86400-000/@-23.1614618,-49.9786318,17z/data=!3m1!4b1!4m6!3m5!1s0x94c026540c9a169f:0x470a756e7e484a38!8m2!3d-23.1614668!4d-49.9737663!16s%2Fg%2F11c2804rvy?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-icon">
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                </a>
+            </div>
+
+            <!-- Ícones das Redes Sociais (Centro) -->
+            <div class="social-media">
+                <a href="https://facebook.com/OngBicharedoJacarezinho" target="_blank" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/ongbicharedo" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/bicharedo" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <!-- GitHub Links (Direita) -->
+            <div class="github-links">
+                <a href="https://github.com/user/curriculo1" target="_blank">Beatriz Milanezi Lopes</a>
+                <a href="https://gabrielfsarti.github.io/curriculocss/" target="_blank">Gabriel Faria da Fonseca Sarti</a>
+                <a href="https://github.com/user/curriculo3" target="_blank">Nicolly Kauana Ferreira</a>
+            </div>
+        </div>
+        <!-- Imagem Personalizada no Rodapé -->
+        <!--<div class="custom-image">
+            <img src="img/coracao.png" alt="coracao" />
+        </div>-->
+    </div>
+</footer>
+
+</body>
+</html>
