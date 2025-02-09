@@ -1,0 +1,805 @@
+/* Estilos gerais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #F5F5DD;
+}
+
+
+
+section {
+    padding: 28px 8%;
+}
+
+h1, h2 {
+    color: #C91027;
+}
+h3 {
+    color: #ffffff
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#link-Rodape {
+    color:#ffffff 
+}
+#link-Rodape:hover{
+    color:#E27B58
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C91027;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    color:#fff;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-default:hover {
+    background-color:#E27B58;
+    color: #fff;
+
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    padding: 28px 8%;
+    background-color: #fefefe;    
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    width: 10%;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+.nav-item a:hover {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: 3px solid #C91027;
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+
+/* Seção Inicial */
+
+#home {
+    display: flex;
+    min-height: calc(100vh - 134.23px);
+    position: relative;
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: #1d1d1d;
+}
+
+#cta .title span {
+    color:#C91027
+}
+
+#cta .description {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 100%;
+    width: fit-content;
+
+}
+
+.shape {
+    background-color: #d7c2ae;
+    width: 50%;
+    height: 79%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 15%;
+    right: 0;
+    z-index: 1;
+}
+
+/* Sobre */
+
+#about {
+    min-height: calc(100vh - 134.23px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+#about_equipe {
+    width: 500px;
+    height: auto;
+}
+
+#about .section-title {
+    font-size: 3rem;
+}
+
+#about .description {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Adote */
+
+#adoption {
+    min-height: calc(100vh - 134.23px);
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+#adoption_img {
+    width: 500px;
+    height: auto;
+}
+
+#adoption .section-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#adoption .description {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+#adoption .btn-default {
+    margin: 10%;
+    padding: 3%;
+}
+
+/* Doação */
+
+#donation {
+    min-height: calc(100vh - 134.23px);
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+#donation_img {
+    width: 500px;
+    height: auto;
+}
+
+#donation .section-title {
+    font-size: 3rem;
+
+}
+
+#donation .description {
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+#donation .btn-default {
+    margin: 10%;
+    padding: 3%;
+}
+
+/* Rodapé */
+footer {
+    background-color: #C91027;
+    color: white;
+    text-align: center; 
+    padding: 20px 4%;
+    position: relative;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; /* p ficar vertical */
+    flex-wrap: wrap; 
+    width: 100%;
+    gap: 7%;
+    margin: 0 auto; 
+}
+
+footer .address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+footer .address p {
+    margin: 5px 0;
+}
+
+footer .address i {
+    margin-right: 10px;
+}
+
+/* Ícones das Redes Sociais (Centro) */
+footer .social-media {
+    display: flex;
+    gap: 2rem;
+    margin: 20px 0;
+}
+
+footer .social-media a {
+    font-size: 60px;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+footer .social-media a:hover {
+    color: #E27B58;
+    transform: scale(1.2);
+}
+
+/* GitHub Links (Direita) */
+footer .github-links {
+    text-align: right;
+    margin: 0 20px;
+}
+
+footer .github-links a {
+    display: block;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .github-links a:hover {
+    color: #E27B58;
+}
+
+/* Contêiner da imagem personalizada */
+.custom-image {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    width: 320px;
+    height: 320px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    z-index: 10;
+}
+footer .custom-image img {
+    width: 10;
+    height: 10;
+    border-radius: 0%; 
+    object-fit: cover; 
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); 
+}
+
+/*-----------------------------LOGIN------------------*/
+.login {
+    overflow: hidden;
+    background-color: #EFE6DB;
+    padding: 40px 30px 30px 0px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+  }
+  
+  .login::before,
+  .login::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+  }
+  
+  .login::before {
+    left: 40%;
+    bottom: -130%;
+    background-color: rgba(226, 123, 88, 0.5);
+    animation: wawes 6s infinite linear;
+  }
+  
+  .login::after {
+    left: 35%;
+    bottom: -125%;
+    background-color: rgba(201, 16, 39, 0.5);
+    animation: wawes 7s infinite linear;
+  }
+  
+  .login > input {
+    font-family: var(--font-asap);
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+  }
+  
+  .login > button {
+    font-family: var(--font-asap);
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: var(--fire-engine-red);
+    transition: background-color 300ms;
+  }
+  
+  .login > button:hover {
+    background-color: var(--burnt-sienna); /* Darken equivalente */
+}
+  
+@keyframes wawes {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*-------------------------CADASTRO------------------*/
+
+/* cadastro Form */
+.cadastro {
+    position: relative; /* Isso define o contexto de posicionamento */
+    overflow: hidden;
+    background-color: var(--beige-light);
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 400px;
+    transform: translate(0, 0);
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+    text-align: left;
+}
+
+/* Animated Background */
+.cadastro::before,
+.cadastro::after {
+    content: '';
+    position: absolute;
+    width: 1200px; /* Reduzido */
+    height: 1200px; /* Reduzido */
+    border-radius: 40% 45% 35% 40%; /* Simplificado */
+    z-index: -1; /* Para não sobrepor o conteúdo */
+}
+
+.cadastro::before {
+    left: 60%; /* Ajustado para centralizar melhor */
+    bottom: -60%; /* Ajustado para não invadir outras áreas */
+    background-color: rgba(226, 123, 88, 0.5);
+    animation: wawes 6s infinite linear;
+}
+
+.cadastro::after {
+    left: 55%;
+    bottom: -65%;
+    background-color: rgba(201, 16, 39, 0.5);
+    animation: wawes 7s infinite linear;
+}
+
+
+/* Input Fields */
+.cadastro label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--fire-engine-red);
+}
+
+.cadastro input {
+    font-family: var(--font-asap);
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit Button */
+.cadastro button {
+    font-family: var(--font-asap);
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: var(--fire-engine-red);
+    transition: background-color 300ms ease;
+}
+
+.cadastro button:hover {
+    background-color: var(--burnt-sienna);
+}
+
+.btn-excluir {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-excluir:hover {
+    background-color: #cc0000;
+}
+
+#btn-excluir-todos {
+    background-color: #C91027; /* Cor de fundo padrão */
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-excluir-todos:hover {
+    background-color: #E27B58; /* Cor de fundo ao passar o mouse */
+}
+
+/* Animation */
+@keyframes wawes {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*------------------------------ADMIN------------*/
+#lista-usuarios {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    border: 1px solid #C91027;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#lista-usuarios li {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border:1px solid #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    #nav_list,
+    #navbar .btn-default {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav_logo {
+        width: 30%
+    }
+
+   
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #about img {
+        display: none;
+    }
+
+    #adoption img {
+        display: none;
+    }
+
+    #donation img {
+        display: none;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .action {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .address, footer .github-links {
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    footer .social-media {
+        margin: 20px 0;
+    }
+
+    footer img{
+        display: none;
+    }
+}
+/*--------------ADMIN-----------/*
+/* Estilos gerais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #F5F5DD;
+}
+
+section {
+    padding: 28px 8%;
+}
+
+h1, h2 {
+    color: #C91027;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+h3 {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#link-Rodape {
+    color: #ffffff;
+}
+
+#link-Rodape:hover {
+    color: #E27B58;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C91027;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-bottom: 15px; /* Espaço entre os botões */
+}
+
+.btn-default:hover {
+    background-color: #E27B58;
+    color: #fff;
+}
+
+/* Formulário de Cadastro */
+.cadastro {
+    overflow: hidden;
+    background-color: #efe4db;
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto; /* Centraliza o formulário */
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+
+.cadastro label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #C91027;
+}
+
+.cadastro input {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Espaço entre os campos */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os botões */
+}
+/* Estilos para os botões de Cadastrar e Limpar Campos */
+form button[type="submit"] {
+    background-color: #C91027;  /* Cor de fundo do botão "Cadastrar" */
+    color: white;               /* Cor do texto */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #E27B58;  /* Cor de fundo do botão "Cadastrar" ao passar o mouse */
+}
+
+form button[type="reset"] {
+    background-color: #B0B0B0;  /* Cor de fundo do botão "Limpar Campos" */
+    color: white;                /* Cor do texto */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="reset"]:hover {
+    background-color: #8C8C8C;  /* Cor de fundo do botão "Limpar Campos" ao passar o mouse */
+}
+
+
+footer {
+    background-color: #C91027;
+    color: white;
+    text-align: center;
+    padding: 20px 4%;
+}
+
+footer p {
+    margin-top: 20px;
+}
